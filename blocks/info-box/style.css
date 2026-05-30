@@ -1,0 +1,122 @@
+.sib-info-box {
+	border: 1px solid #e5e7eb;
+	border-radius: 18px;
+	padding: 28px;
+	background: linear-gradient(180deg, #ffffff 0%, #f9fbfd 100%);
+	box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+	text-align: center;
+	height: 100%;
+}
+
+.sib-info-box.is-align-left {
+	text-align: left;
+}
+
+.sib-info-box.is-align-center {
+	text-align: center;
+}
+
+.sib-info-box.is-align-right {
+	text-align: right;
+}
+
+.sib-info-box__media-wrap {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.sib-info-box__figure {
+	margin: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sib-info-box.is-align-left .sib-info-box__media-wrap {
+	justify-content: flex-start;
+}
+
+.sib-info-box.is-align-center .sib-info-box__media-wrap {
+	justify-content: center;
+}
+
+.sib-info-box.is-align-right .sib-info-box__media-wrap {
+	justify-content: flex-end;
+}
+
+.sib-info-box__icon,
+.sib-info-box__image,
+.sib-info-box__media-placeholder {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 96px;
+	height: 96px;
+	border-radius: 999px;
+}
+
+.sib-info-box__icon {
+	font-size: 36px;
+	color: #2271b1;
+	background: #e8f1fb;
+}
+
+.sib-info-box__image {
+	object-fit: cover;
+	display: block;
+}
+
+.sib-info-box__media-placeholder {
+	padding: 12px;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #5b6470;
+	background: #f3f4f6;
+}
+
+.sib-info-box.is-style-framed .sib-info-box__icon,
+.sib-info-box.is-style-framed .sib-info-box__image,
+.sib-info-box.is-style-framed .sib-info-box__media-placeholder {
+	border-radius: 24px;
+	background: #ffffff;
+	border: 2px solid #dbe5f0;
+	box-shadow: 0 14px 30px rgba(34, 113, 177, 0.12);
+}
+
+.sib-info-box__title {
+	font-size: 1.5rem;
+	line-height: 1.25;
+}
+
+.sib-info-box__description {
+	font-size: 1rem;
+	line-height: 1.7;
+}
+
+.sib-info-box__description p {
+	margin: 0 0 0.8em;
+}
+
+.sib-info-box__description p:last-child {
+	margin-bottom: 0;
+}
+
+.sib-info-box__button {
+	display: inline-block;
+	padding: 12px 24px;
+	border-radius: 999px;
+	background: #111111;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 600;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sib-info-box__button:hover,
+.sib-info-box__button:focus {
+	color: #ffffff;
+	transform: translateY(-1px);
+	box-shadow: 0 10px 25px rgba(17, 17, 17, 0.18);
+}

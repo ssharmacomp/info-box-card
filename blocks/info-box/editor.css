@@ -1,0 +1,21 @@
+.wp-block-info-box-card-info-box {
+	min-height: 100px;
+}
+
+.sib-info-box__tabs .components-tab-panel__tabs {
+	margin-bottom: 16px;
+	border-bottom: 1px solid #e2e8f0;
+}
+
+.sib-info-box__tabs .components-tab-panel__tabs-item {
+	padding: 10px 12px;
+	font-weight: 600;
+}
+
+.sib-info-box__margin-control .components-base-control {
+	margin-bottom: 10px;
+}
+
+.sib-info-box__url-control {
+	margin-top: 12px;
+}

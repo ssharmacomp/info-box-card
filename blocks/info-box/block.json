@@ -1,0 +1,164 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "info-box-card/info-box",
+  "version": "1.0.0",
+  "title": "Info Box Card",
+  "category": "widgets",
+  "icon": "info-outline",
+  "description": "Info box block with icon or image media, rich title and description controls, and CTA support.",
+  "keywords": [ "info box", "icon box", "service box", "card" ],
+  "textdomain": "info-box-card",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "showMedia": {
+      "type": "boolean",
+      "default": true
+    },
+    "mediaType": {
+      "type": "string",
+      "default": "icon"
+    },
+    "selectedIcon": {
+      "type": "string",
+      "default": "fa-star"
+    },
+    "iconSearch": {
+      "type": "string",
+      "default": ""
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "imageId": {
+      "type": "number"
+    },
+    "showTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "titleTag": {
+      "type": "string",
+      "default": "h3"
+    },
+    "titleText": {
+      "type": "string",
+      "source": "html",
+      "selector": ".sib-info-box__title",
+      "default": "Info Box Title"
+    },
+    "showDescription": {
+      "type": "boolean",
+      "default": true
+    },
+    "descriptionText": {
+      "type": "string",
+      "source": "html",
+      "selector": ".sib-info-box__description",
+      "default": "Add a short description that explains what this box is about."
+    },
+    "showButton": {
+      "type": "boolean",
+      "default": false
+    },
+    "cardAlignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Learn More"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "mediaStyle": {
+      "type": "string",
+      "default": "stacked"
+    },
+    "mediaBorderRadius": {
+      "type": "string",
+      "default": "999px"
+    },
+    "mediaBackgroundColor": {
+      "type": "string",
+      "default": "#e8f1fb"
+    },
+    "iconColor": {
+      "type": "string",
+      "default": "#2271b1"
+    },
+    "iconFontSize": {
+      "type": "string",
+      "default": "36px"
+    },
+    "imageWidth": {
+      "type": "string",
+      "default": "96px"
+    },
+    "imageHeight": {
+      "type": "string",
+      "default": "96px"
+    },
+    "titleColor": {
+      "type": "string",
+      "default": "#111111"
+    },
+    "titleFontSize": {
+      "type": "string",
+      "default": "1.5rem"
+    },
+    "titleFontWeight": {
+      "type": "string",
+      "default": "700"
+    },
+    "titleMarginTop": {
+      "type": "string",
+      "default": "0px"
+    },
+    "titleMarginRight": {
+      "type": "string",
+      "default": "0px"
+    },
+    "titleMarginBottom": {
+      "type": "string",
+      "default": "12px"
+    },
+    "titleMarginLeft": {
+      "type": "string",
+      "default": "0px"
+    },
+    "descriptionColor": {
+      "type": "string",
+      "default": "#5b6470"
+    },
+    "descriptionMarginTop": {
+      "type": "string",
+      "default": "0px"
+    },
+    "descriptionMarginRight": {
+      "type": "string",
+      "default": "0px"
+    },
+    "descriptionMarginBottom": {
+      "type": "string",
+      "default": "20px"
+    },
+    "descriptionMarginLeft": {
+      "type": "string",
+      "default": "0px"
+    }
+  },
+  "editorScript": "info-box-card-editor-script",
+  "style": "info-box-card-style",
+  "editorStyle": "info-box-card-editor-style"
+}
